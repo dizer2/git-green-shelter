@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 *{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+body{
+	overflow-x: hidden;
 }
 
 .wrap{
@@ -10,18 +15,142 @@
 	.section1{
 		width: 100%;
 		height: 200vh;
-		background-color: aqua;
+		// background-color: aqua;
 		
 
 	}
 	.section2{
-		width: 100%;
-		height: 200vh;
-
 		.help__paje{
 			width: 100%;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+			.help__bg{
+				width: 100%;
+				height: 120vh;
+				position: absolute;
+				z-index: 1;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-o-user-select: none;
+				user-select: none;
+					
+			}
+			.help__container{
+				width: 100%;
+				height: 100%;
+				z-index: 10;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				padding-left: 140px;
+				padding-right: 140px;
+				padding-top: 150px;
+				.container-iteam{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					.help__titel{
+						font-family: 'Comfortaa';
+						font-style: normal;
+						font-weight: 600;
+						font-size: 48px;
+						line-height: 54px;
+						display: flex;
+						text-align: center;
+						color: #fff;
+						position: relative;
+						display: inline-block;
+						margin: 0;
+						& > span {
+							color: #333;
+						}					
+					}
+					.container__card-box{
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						.container__card{
+							width: auto;
+							height: auto;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							margin-top: 100px;
+							margin-left: 10px;
+							margin-right: 10px;
 
+							.card-box{
+								width: 300px;
+								height: auto;
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								margin-top: 30px;
+								margin-bottom: 30px;
+
+
+								.car__icon{
+									width: 75px;
+									height: 75px;
+
+								}
+								.card__description{
+									font-family: 'Comfortaa';
+									font-style: normal;
+									font-weight: 500;
+									font-size: 24px;
+									line-height: 27px;
+									display: flex;
+									align-items: center;
+									text-align: center;
+									color: #FFFFFF;
+									margin-top: 15px;
+
+								}
+							}
+
+						}
+					}
+				}
+				
+			}
 		}
+		// .blog__paje{
+		// 	width: 100%;
+		// 	height: 110vh;
+		// 	display: flex;
+		// 	padding-left: 140px;
+		// 	padding-right: 140px;
+		// 	.blog__left{
+		// 		width: 50%;
+		// 		height: 100%;
+		// 		.blog__titel{
+		// 			font-family: 'Comfortaa';
+		// 			font-style: normal;
+		// 			font-weight: 600;
+		// 			font-size: 48px;
+		// 			line-height: 54px;
+		// 			display: flex;
+		// 			text-align: center;
+		// 			color: #fff;
+		// 			position: relative;
+		// 			display: inline-block;
+		// 			margin: 0;
+		// 			& > span {
+		// 				color: #333;
+		// 			}					
+		// 		}
+
+		// 	}
+
+
+		// }
 
 
 	}
