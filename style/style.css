@@ -12,7 +12,8 @@
     background-color: aqua; }
   .wrap .section2 {
     width: 100%;
-    height: 200vh;
-    background-color: aquamarine; }
+    height: 200vh; }
+    .wrap .section2 .help__paje {
+      width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
