@@ -1,1 +1,1 @@
-		<p style="color: beige;">green-shelter</p>
+<p style="color: beige;">green-shelter</p>
