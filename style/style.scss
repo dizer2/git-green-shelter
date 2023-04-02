@@ -222,9 +222,7 @@ body{
                     width: 176px;
                     height: 53px;
                     border: 2px solid white;
-                    border-radius: 10px;
-                    border-top-right-radius: 4px;
-                    border-bottom-left-radius: 4px;
+                    border-radius: 10px 5px;
                     background-color: transparent;
                     color: white;
                     font-size: 0.9em;
@@ -239,27 +237,129 @@ body{
             }
             .homePageMain{
                 width: 100%;
+                height: calc(100vh - 141px);
                 padding: 0 141px;
+                color: white;
+                font-family: $Comfortaa;
                 .mainMainPart{
                     width: 100%;
+                    height: 100%;
                     display: flex;
+                    align-items: center;
+                    .homePageMainLeft, .homePageMainRight{
+                        width: 50%;
+                    }
                     .homePageMainLeft{
-                        
+                        margin-bottom: 110px;
+                        span{
+                            display: block;
+                            width: 580px;
+                            font-size: 3em;
+                            font-weight: 600;
+                        }
+                        p{
+                            font-size: 1.25em;
+                            font-weight: 300;
+                            width: 469px;
+                            margin: 25px 0 85px 0;
+                            
+                        }
+                        .findFriendBtn{
+                            width: 211px;
+                            height: 64px;
+                            border-radius: 15px 10px;
+                            border: none;
+                            font-family: $Comfortaa;
+                            font-size: 1em;
+                            background-color: #fff;
+                            cursor: pointer;
+                            i{
+                                margin-left: 5px;
+                                font-size: 1.1em;
+                            }
+                        }
+                    }
+                    .homePageMainRight{
+                        height: 100%;
+                        display: flex;
+                        align-items: flex-end;
+                        img{
+                            height: 604px;
+                            margin-left: 20%;
+                        }
+                    }
+                }
+                .homePageMainSliderSwicher{
+                    width: 100%;
+                    height: 21px;
+                    position: relative;
+                    bottom: 42px;
+                    display: flex;
+                    justify-content: center;
+                    .sliderFastBtn{
+                        width: 21px;
+                        height: 21px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        margin: 0 10px;
+                        cursor: pointer;
+                    }
+                    .sliderFastBtn_Active{
+                        opacity: .3;
+                    }
+                }
+                .sliderArrowsContainer{
+                    position: absolute;
+                    left: 0;
+                    top: 400px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 30px;
+                    img{
+                        cursor: pointer;
                     }
                 }
             }
         }
-
-
-    }
-
-    .section2 {
-        width: 100%;
-        height: 200vh;
-
-        .help__paje {
+        .aboutUsPage{
             width: 100%;
-
+            height: 100vh;
+            padding: 0 141px;
+            font-family: $Comfortaa;
+            .aboutUsPageMain{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                .aboutUsPageLeft, .aboutUsPageRight{
+                    width: 50%;
+                }
+                .aboutUsPageLeft{
+                    padding-right: 50px;
+                    display: flex;
+                    justify-content: flex-end;
+                    img{
+                        width: 600px;
+                    }
+                }
+                .aboutUsPageRight{
+                    padding-left: 50px;
+                    span{
+                        font-size: 3em;
+                        font-weight: 600;
+                    }
+                    span:first-child{
+                        color: #4A9B8D;
+                    }
+                    p{
+                        margin-top: 20px;
+                        width: 540px;
+                        font-size: 1.5em;
+                        font-weight: 300;
+                    }
+                }
+            }
         }
 
 
