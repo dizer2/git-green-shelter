@@ -1,14 +1,19 @@
 // <<<<<<< HEAD
 $Comfortaa: 'Comfortaa', cursive;
+@mixin display-flexEasy {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.wrap {
-    width: 100%;
-    min-height: 100vh;
+
 // =======
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 *{
@@ -24,156 +29,7 @@ body{
 .wrap{
 	width: 100%;
 	min-height: 100vh;
-	.section1{
-		width: 100%;
-		height: 200vh;
-		// background-color: aqua;
-		
-
-	}
-	.section2{
-		.help__paje{
-			width: 100%;
-			height: 100vh;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			overflow: hidden;
-			.help__bg{
-				width: 100%;
-				height: 120vh;
-				position: absolute;
-				z-index: 1;
-				-webkit-user-select: none;
-				-khtml-user-select: none;
-				-moz-user-select: none;
-				-o-user-select: none;
-				user-select: none;
-					
-			}
-			.help__container{
-				width: 100%;
-				height: 100%;
-				z-index: 10;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				padding-left: 140px;
-				padding-right: 140px;
-				padding-top: 150px;
-				.container-iteam{
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					.help__titel{
-						font-family: 'Comfortaa';
-						font-style: normal;
-						font-weight: 600;
-						font-size: 48px;
-						line-height: 54px;
-						display: flex;
-						text-align: center;
-						color: #fff;
-						position: relative;
-						display: inline-block;
-						margin: 0;
-						& > span {
-							color: #333;
-						}					
-					}
-					.container__card-box{
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						.container__card{
-							width: auto;
-							height: auto;
-							display: flex;
-							flex-direction: column;
-							align-items: center;
-							margin-top: 100px;
-							margin-left: 10px;
-							margin-right: 10px;
-
-							.card-box{
-								width: 300px;
-								height: auto;
-								display: flex;
-								flex-direction: column;
-								align-items: center;
-								margin-top: 30px;
-								margin-bottom: 30px;
-
-
-								.car__icon{
-									width: 75px;
-									height: 75px;
-
-								}
-								.card__description{
-									font-family: 'Comfortaa';
-									font-style: normal;
-									font-weight: 500;
-									font-size: 24px;
-									line-height: 27px;
-									display: flex;
-									align-items: center;
-									text-align: center;
-									color: #FFFFFF;
-									margin-top: 15px;
-
-								}
-							}
-
-						}
-					}
-				}
-				
-			}
-		}
-		// .blog__paje{
-		// 	width: 100%;
-		// 	height: 110vh;
-		// 	display: flex;
-		// 	padding-left: 140px;
-		// 	padding-right: 140px;
-		// 	.blog__left{
-		// 		width: 50%;
-		// 		height: 100%;
-		// 		.blog__titel{
-		// 			font-family: 'Comfortaa';
-		// 			font-style: normal;
-		// 			font-weight: 600;
-		// 			font-size: 48px;
-		// 			line-height: 54px;
-		// 			display: flex;
-		// 			text-align: center;
-		// 			color: #fff;
-		// 			position: relative;
-		// 			display: inline-block;
-		// 			margin: 0;
-		// 			& > span {
-		// 				color: #333;
-		// 			}					
-		// 		}
-
-		// 	}
-
-
-		// }
-
-
-	}
-}
-
-
-
-
-// >>>>>>> 67b0c3123ece7526bcdcb1a64a69d40a283571af
-
-    .section1 {
+	.section1 {
         width: 100%;
         min-height: 200vh;
 
@@ -181,6 +37,7 @@ body{
             width: 100%;
             min-height: 100vh;
             background: rgb(74, 155, 141);
+			overflow: hidden;
             background: linear-gradient(90deg, rgba(74, 155, 141, 1) 0%, rgba(66, 143, 129, 1) 40%, rgba(20, 135, 115, 1) 100%);
 
             header {
@@ -364,4 +221,262 @@ body{
 
 
     }
+
+	.section2{
+		.help__paje{
+			width: 100%;
+			height: 100vh;
+			@include display-flexEasy;
+			overflow: hidden;
+			.help__bg{
+				width: 100%;
+				height: 120vh;
+				position: absolute;
+				z-index: 1;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-o-user-select: none;
+				user-select: none;
+					
+			}
+			.help__container{
+				width: 100%;
+				height: 100%;
+				z-index: 10;
+				@include display-flexEasy;
+				padding-left: 141px;
+				padding-right: 141px;
+				padding-top: 150px;
+				.container-iteam{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					.help__titel{
+						font-family: $Comfortaa;
+						font-style: normal;
+						font-weight: 600;
+						font-size: 48px;
+						line-height: 54px;
+						display: flex;
+						text-align: center;
+						color: #fff;
+						position: relative;
+						display: inline-block;
+						margin: 0;
+						& > span {
+							color: #333;
+						}					
+					}
+					.container__card-box{
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						.container__card{
+							width: auto;
+							height: auto;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							margin-top: 100px;
+							margin-left: 10px;
+							margin-right: 10px;
+
+							.card-box{
+								width: 300px;
+								height: auto;
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								margin-top: 30px;
+								margin-bottom: 30px;
+
+
+								.car__icon{
+									width: 75px;
+									height: 75px;
+
+								}
+								.card__description{
+									font-family: $Comfortaa;
+									font-style: normal;
+									font-weight: 500;
+									font-size: 24px;
+									line-height: 27px;
+									display: flex;
+									align-items: center;
+									text-align: center;
+									color: #FFFFFF;
+									margin-top: 15px;
+
+								}
+							}
+
+						}
+					}
+				}
+				
+			}
+		}
+		.blog__paje{
+			width: 100%;
+			height: 110vh;
+			display: flex;
+			padding-left: 140px;
+			padding-right: 140px;
+			padding-top: 150px;
+			.blog__left{
+				width: 50%;
+				height: 100%;
+				.blog__titel{
+					font-family: $Comfortaa;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 48px;
+					line-height: 54px;
+					display: flex;
+					color: #fff;
+					position: relative;
+					display: inline-block;
+					margin: 0;
+					color: #333;
+					& > span {
+						color: #4A9B8D;
+					}					
+				}
+				.blog__description{
+				font-family: $Comfortaa;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 24px;
+				line-height: 27px;
+				display: flex;
+				color: #333333;
+				margin-top: 25px;
+
+
+				}
+				a{
+					text-decoration: none;
+				}
+				.play-box{
+					width: 280px;
+					margin-top: 60px;
+					display: flex;
+					align-items: center;
+					cursor: pointer;
+					.play__fill{
+						transition: 0.5s;
+
+					}
+					.play__icon{
+						width: 85px;
+						height: 85px;
+						border: 1px solid #4A9B8D;
+						border-radius: 50%;
+						transition: 0.5s;
+
+
+						@include display-flexEasy;
+
+
+
+					}
+					.play__text{
+						font-family: $Comfortaa;
+						font-style: normal;
+						font-weight: 700;
+						font-size: 24px;
+						line-height: 27px;
+						display: flex;
+						align-items: center;
+						color: #333333;
+						margin-left: 25px;
+						.play__img{
+							transition: 0.5s;
+
+						}
+
+				
+					}
+					&:hover{
+						.play__fill{
+							transition: 0.5s;
+							fill: #333;
+						}
+						.play__icon{
+							border: 1px solid #333;
+							transition: 0.5s;
+
+
+						}
+						
+					}
+				}
+
+			}
+			.blog__right{
+				width: 50%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				padding-bottom: 40px;
+
+				.video-mask{
+					width: 450px;
+					height: 280px;
+					border-radius: 20px;
+					overflow: hidden;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-top: 15px;
+					margin-bottom: 15px;
+					.dog1__cover{
+						width: 450px;
+						height: 265px;
+						position: absolute;
+						border-radius: 20px;
+
+						
+						
+					}
+					.play__video{
+						width: 85px;
+						height: 85px;
+						background: rgba(0, 0, 0, 0.4);
+						border-radius: 50%;
+						position: absolute;
+						z-index: 99;
+						cursor: pointer;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+					.video__dog{
+						width: 100%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						border-radius: 20px;
+						
+				
+					}
+					
+				}
+			}
+
+
+		}
+
+
+	}
 }
+
+
+
+
+// >>>>>>> 67b0c3123ece7526bcdcb1a64a69d40a283571af
+
+   
