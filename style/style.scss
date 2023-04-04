@@ -29,9 +29,11 @@ body{
 .wrap{
 	width: 100%;
 	min-height: 100vh;
+	overflow-x: hidden;
 	.section1 {
         width: 100%;
         min-height: 200vh;
+		overflow-x: hidden;
 
         .homePage {
             width: 100%;
@@ -938,7 +940,7 @@ body{
 }
 
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1200px){
 	
 .wrap{
 	width: 100%;
@@ -1137,24 +1139,27 @@ body{
     }
 
 	.section2{
+		
 		.help__paje{
+			overflow: hidden;
 			height: 100vh;
 			.help__bg{
+				width: 100%;
 				height: 120vh;
 					
 			}
 			.help__container{
-				padding-left: 120px;
-				padding-right: 120px;
-				padding-top: 150px;
+				padding-left: 100px;
+				padding-right: 100px;
+				padding-top: 140px;
 				.container-iteam{
 					.help__titel{
-						font-size: 42px;
-						line-height: 50px;				
+						font-size: 36px;
+						line-height: 40px;				
 					}
 					.container__card-box{
 						.container__card{
-							margin-top: 70px;
+							margin-top: 60px;
 							margin-left: 10px;
 							margin-right: 10px;
 							.card-box{
@@ -1164,13 +1169,13 @@ body{
 
 
 								.car__icon{
-									width: 75px;
-									height: 75px;
+									width: 60px;
+									height: 60px;
 
 								}
 								.card__description{
-									font-size: 24px;
-									line-height: 27px;
+									font-size: 20px;
+									line-height: 20px;
 									margin-top: 15px;
 
 								}
@@ -1184,17 +1189,17 @@ body{
 		}
 		.blog__paje{
 			height: 110vh;
-			padding-left: 120px;
-			padding-right: 120px;
-			padding-top: 150px;
+			padding-left: 100px;
+			padding-right: 100px;
+			padding-top: 140px;
 			.blog__left{
 				.blog__titel{
-					font-size: 42px;
-					line-height: 50px;				
+					font-size: 36px;
+					line-height: 40px;				
 				}
 				.blog__description{
-				font-size: 24px;
-				line-height: 27px;
+				font-size: 20px;
+				line-height: 20px;
 				margin-top: 25px;
 
 
@@ -1204,12 +1209,12 @@ body{
 					margin-top: 60px;
 	
 					.play__icon{
-						width: 85px;
-						height: 85px;
+						width: 80px;
+						height: 80px;
 					}
 					.play__text{
-						font-size: 24px;
-						line-height: 27px;
+						font-size: 20px;
+						line-height: 20px;
 						margin-left: 25px;
 				
 
@@ -1221,17 +1226,17 @@ body{
 			}
 			.blog__right{
 
-				padding-bottom: 40px;
+				padding-bottom: 70px;
 
 				.video-mask{
-					width: 450px;
+					width: 400px;
 					height: 280px;
 
 					margin-top: 15px;
 					margin-bottom: 15px;
 					.dog1__cover{
-						width: 450px;
-						height: 250px;
+						width: 400px;
+						height: 210px;
 					}
 					.play__video{
 						width: 85px;

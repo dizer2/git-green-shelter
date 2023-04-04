@@ -14,10 +14,12 @@ body {
 
 .wrap {
   width: 100%;
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow-x: hidden; }
   .wrap .section1 {
     width: 100%;
-    min-height: 200vh; }
+    min-height: 200vh;
+    overflow-x: hidden; }
     .wrap .section1 .homePage {
       width: 100%;
       min-height: 100vh;
@@ -708,7 +710,7 @@ body {
             align-items: center;
             justify-content: center;
             border-radius: 20px; } }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   .wrap {
     width: 100%;
     min-height: 100vh; }
@@ -865,18 +867,20 @@ body {
               font-size: 1.5em;
               font-weight: 300; }
     .wrap .section2 .help__paje {
+      overflow: hidden;
       height: 100vh; }
       .wrap .section2 .help__paje .help__bg {
+        width: 100%;
         height: 120vh; }
       .wrap .section2 .help__paje .help__container {
-        padding-left: 120px;
-        padding-right: 120px;
-        padding-top: 150px; }
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 140px; }
         .wrap .section2 .help__paje .help__container .container-iteam .help__titel {
-          font-size: 42px;
-          line-height: 50px; }
+          font-size: 36px;
+          line-height: 40px; }
         .wrap .section2 .help__paje .help__container .container-iteam .container__card-box .container__card {
-          margin-top: 70px;
+          margin-top: 60px;
           margin-left: 10px;
           margin-right: 10px; }
           .wrap .section2 .help__paje .help__container .container-iteam .container__card-box .container__card .card-box {
@@ -884,44 +888,44 @@ body {
             margin-top: 30px;
             margin-bottom: 30px; }
             .wrap .section2 .help__paje .help__container .container-iteam .container__card-box .container__card .card-box .car__icon {
-              width: 75px;
-              height: 75px; }
+              width: 60px;
+              height: 60px; }
             .wrap .section2 .help__paje .help__container .container-iteam .container__card-box .container__card .card-box .card__description {
-              font-size: 24px;
-              line-height: 27px;
+              font-size: 20px;
+              line-height: 20px;
               margin-top: 15px; }
     .wrap .section2 .blog__paje {
       height: 110vh;
-      padding-left: 120px;
-      padding-right: 120px;
-      padding-top: 150px; }
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 140px; }
       .wrap .section2 .blog__paje .blog__left .blog__titel {
-        font-size: 42px;
-        line-height: 50px; }
+        font-size: 36px;
+        line-height: 40px; }
       .wrap .section2 .blog__paje .blog__left .blog__description {
-        font-size: 24px;
-        line-height: 27px;
+        font-size: 20px;
+        line-height: 20px;
         margin-top: 25px; }
       .wrap .section2 .blog__paje .blog__left .play-box {
         width: 280px;
         margin-top: 60px; }
         .wrap .section2 .blog__paje .blog__left .play-box .play__icon {
-          width: 85px;
-          height: 85px; }
+          width: 80px;
+          height: 80px; }
         .wrap .section2 .blog__paje .blog__left .play-box .play__text {
-          font-size: 24px;
-          line-height: 27px;
+          font-size: 20px;
+          line-height: 20px;
           margin-left: 25px; }
       .wrap .section2 .blog__paje .blog__right {
-        padding-bottom: 40px; }
+        padding-bottom: 70px; }
         .wrap .section2 .blog__paje .blog__right .video-mask {
-          width: 450px;
+          width: 400px;
           height: 280px;
           margin-top: 15px;
           margin-bottom: 15px; }
           .wrap .section2 .blog__paje .blog__right .video-mask .dog1__cover {
-            width: 450px;
-            height: 250px; }
+            width: 400px;
+            height: 210px; }
           .wrap .section2 .blog__paje .blog__right .video-mask .play__video {
             width: 85px;
             height: 85px; }
