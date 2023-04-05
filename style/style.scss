@@ -170,12 +170,13 @@ body{
                 .sliderArrowsContainer{
                     position: absolute;
                     left: 0;
-                    top: 400px;
+                    top: calc(50vh - 54px);
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
                     padding: 0 30px;
                     img{
+						z-index: 3;
                         cursor: pointer;
                     }
                 }
@@ -484,28 +485,10 @@ body{
 @media screen and (max-width: 1400px){
 	
 .wrap{
-	width: 100%;
-	min-height: 100vh;
 	.section1 {
-        width: 100%;
-        min-height: 200vh;
-
         .homePage {
-            width: 100%;
-            min-height: 100vh;
-            background: rgb(74, 155, 141);
-			overflow: hidden;
-            background: linear-gradient(90deg, rgba(74, 155, 141, 1) 0%, rgba(66, 143, 129, 1) 40%, rgba(20, 135, 115, 1) 100%);
-
             header {
-                width: 100%;
-                height: 141px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0 141px;
-                color: white;
-                font-family: $Comfortaa;
+				height: 120px;
                 .logo{
                     display: flex;
                     align-items: center;
@@ -513,164 +496,69 @@ body{
                         width: 50px;
                     }
                     span{
-                        font-size: 1.2em;
+                        font-size: 1.1em;
                         font-weight: 700;
-                        margin-left: 20px;
+                        margin-left: 10px;
                     }
                 }
                 nav{
-                    width: 558px;
+                    width: 458px;
                     font-weight: 500;
-                    font-size: 1em;
-                    ul{
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                    }
-                    ul li{
-                        list-style: none;
-                        cursor: pointer;
-                    }
+                    font-size: 0.9em;
                 }
                 .supportBtn{
-                    width: 176px;
-                    height: 53px;
-                    border: 2px solid white;
-                    border-radius: 10px 5px;
-                    background-color: transparent;
-                    color: white;
-                    font-size: 0.9em;
-                    font-family: $Comfortaa;
-                    cursor: pointer;
-                    font-weight: 600;
+                    width: 145px;
+                    height: 46px;
+                    font-size: 0.8em;
                     i{
-                        margin-left: 5px;
-                        font-size: 1em;
+                        margin-left: 3px;
+                        font-size: 0.9em;
                     }
                 }
             }
             .homePageMain{
-                width: 100%;
-                height: calc(100vh - 141px);
-                padding: 0 141px;
-                color: white;
-                font-family: $Comfortaa;
+                height: calc(100vh - 120px);
                 .mainMainPart{
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    .homePageMainLeft, .homePageMainRight{
-                        width: 50%;
-                    }
                     .homePageMainLeft{
-                        margin-bottom: 110px;
-                        span{
-                            display: block;
-                            width: 580px;
-                            font-size: 3em;
-                            font-weight: 600;
-                        }
                         p{
-                            font-size: 1.25em;
-                            font-weight: 300;
-                            width: 469px;
-                            margin: 25px 0 85px 0;
+                            margin: 20px 0 50px 0;
                             
                         }
                         .findFriendBtn{
-                            width: 211px;
-                            height: 64px;
-                            border-radius: 15px 10px;
-                            border: none;
-                            font-family: $Comfortaa;
-                            font-size: 1em;
-                            background-color: #fff;
-                            cursor: pointer;
+                            width: 171px;
+                            height: 56px;
+                            font-size: 0.9em;
                             i{
-                                margin-left: 5px;
-                                font-size: 1.1em;
+                                margin-left: 2px;
+                                font-size: 1em;
                             }
                         }
                     }
                     .homePageMainRight{
-                        height: 100%;
-                        display: flex;
-                        align-items: flex-end;
                         img{
-                            height: 604px;
-                            margin-left: 20%;
+                            height: 480px;
+                            margin-left: 33%;
                         }
                     }
                 }
                 .homePageMainSliderSwicher{
-                    width: 100%;
-                    height: 21px;
-                    position: relative;
-                    bottom: 42px;
-                    display: flex;
-                    justify-content: center;
                     .sliderFastBtn{
-                        width: 21px;
-                        height: 21px;
-                        background-color: #fff;
-                        border-radius: 50%;
-                        margin: 0 10px;
-                        cursor: pointer;
-                    }
-                    .sliderFastBtn_Active{
-                        opacity: .3;
-                    }
-                }
-                .sliderArrowsContainer{
-                    position: absolute;
-                    left: 0;
-                    top: 400px;
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    padding: 0 30px;
-                    img{
-                        cursor: pointer;
+                        width: 18px;
+                        height: 18px;
                     }
                 }
             }
         }
         .aboutUsPage{
-            width: 100%;
-            height: 100vh;
-            padding: 0 141px;
-            font-family: $Comfortaa;
             .aboutUsPageMain{
-                width: 100%;
-                height: 100vh;
-                display: flex;
-                align-items: center;
-                .aboutUsPageLeft, .aboutUsPageRight{
-                    width: 50%;
-                }
                 .aboutUsPageLeft{
-                    padding-right: 50px;
-                    display: flex;
-                    justify-content: flex-end;
                     img{
-                        width: 600px;
+                        width: 480px;
                     }
                 }
                 .aboutUsPageRight{
-                    padding-left: 50px;
-                    span{
-                        font-size: 3em;
-                        font-weight: 600;
-                    }
-                    span:first-child{
-                        color: #4A9B8D;
-                    }
                     p{
-                        margin-top: 20px;
-                        width: 540px;
-                        font-size: 1.5em;
-                        font-weight: 300;
+                        font-size: 1.3em;
                     }
                 }
             }
@@ -943,193 +831,65 @@ body{
 @media screen and (max-width: 1200px){
 	
 .wrap{
-	width: 100%;
-	min-height: 100vh;
 	.section1 {
-        width: 100%;
-        min-height: 200vh;
-
         .homePage {
-            width: 100%;
-            min-height: 100vh;
-            background: rgb(74, 155, 141);
-			overflow: hidden;
-            background: linear-gradient(90deg, rgba(74, 155, 141, 1) 0%, rgba(66, 143, 129, 1) 40%, rgba(20, 135, 115, 1) 100%);
-
             header {
                 width: 100%;
-                height: 141px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0 141px;
-                color: white;
-                font-family: $Comfortaa;
-                .logo{
-                    display: flex;
-                    align-items: center;
-                    img{
-                        width: 50px;
-                    }
-                    span{
-                        font-size: 1.2em;
-                        font-weight: 700;
-                        margin-left: 20px;
-                    }
-                }
-                nav{
-                    width: 558px;
-                    font-weight: 500;
-                    font-size: 1em;
-                    ul{
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                    }
-                    ul li{
-                        list-style: none;
-                        cursor: pointer;
-                    }
-                }
-                .supportBtn{
-                    width: 176px;
-                    height: 53px;
-                    border: 2px solid white;
-                    border-radius: 10px 5px;
-                    background-color: transparent;
-                    color: white;
-                    font-size: 0.9em;
-                    font-family: $Comfortaa;
-                    cursor: pointer;
-                    font-weight: 600;
-                    i{
-                        margin-left: 5px;
-                        font-size: 1em;
-                    }
-                }
+                padding: 0 100px;
             }
             .homePageMain{
-                width: 100%;
-                height: calc(100vh - 141px);
-                padding: 0 141px;
-                color: white;
-                font-family: $Comfortaa;
+                height: calc(100vh - 120px);
+                padding: 0 100px;
                 .mainMainPart{
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    .homePageMainLeft, .homePageMainRight{
-                        width: 50%;
-                    }
                     .homePageMainLeft{
-                        margin-bottom: 110px;
+                        margin-bottom: 100px;
                         span{
-                            display: block;
-                            width: 580px;
-                            font-size: 3em;
-                            font-weight: 600;
+                            width: 418px;
+                            font-size: 2.2em;
                         }
                         p{
-                            font-size: 1.25em;
-                            font-weight: 300;
-                            width: 469px;
-                            margin: 25px 0 85px 0;
-                            
-                        }
-                        .findFriendBtn{
-                            width: 211px;
-                            height: 64px;
-                            border-radius: 15px 10px;
-                            border: none;
-                            font-family: $Comfortaa;
-                            font-size: 1em;
-                            background-color: #fff;
-                            cursor: pointer;
-                            i{
-                                margin-left: 5px;
-                                font-size: 1.1em;
-                            }
+                            font-size: 1.1em;
+                            width: 416px;
+							margin: 15px 0 40px 0;
                         }
                     }
                     .homePageMainRight{
-                        height: 100%;
-                        display: flex;
-                        align-items: flex-end;
                         img{
-                            height: 604px;
-                            margin-left: 20%;
+                            height: 390px;
+                            margin-left: 25%;
                         }
                     }
                 }
-                .homePageMainSliderSwicher{
-                    width: 100%;
-                    height: 21px;
-                    position: relative;
-                    bottom: 42px;
-                    display: flex;
-                    justify-content: center;
-                    .sliderFastBtn{
-                        width: 21px;
-                        height: 21px;
-                        background-color: #fff;
-                        border-radius: 50%;
-                        margin: 0 10px;
-                        cursor: pointer;
-                    }
-                    .sliderFastBtn_Active{
-                        opacity: .3;
-                    }
-                }
                 .sliderArrowsContainer{
-                    position: absolute;
-                    left: 0;
-                    top: 400px;
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    padding: 0 30px;
+                    padding: 0 20px;
                     img{
+						width: 60px;
                         cursor: pointer;
                     }
                 }
             }
         }
         .aboutUsPage{
-            width: 100%;
-            height: 100vh;
-            padding: 0 141px;
-            font-family: $Comfortaa;
+            padding: 0 100px;
             .aboutUsPageMain{
-                width: 100%;
-                height: 100vh;
-                display: flex;
-                align-items: center;
                 .aboutUsPageLeft, .aboutUsPageRight{
                     width: 50%;
                 }
                 .aboutUsPageLeft{
-                    padding-right: 50px;
-                    display: flex;
-                    justify-content: flex-end;
+                    padding-right: 30px;
                     img{
-                        width: 600px;
+                        width: 400px;
                     }
                 }
                 .aboutUsPageRight{
-                    padding-left: 50px;
+                    padding-left: 30px;
                     span{
-                        font-size: 3em;
-                        font-weight: 600;
-                    }
-                    span:first-child{
-                        color: #4A9B8D;
+                        font-size: 2.2em;
                     }
                     p{
-                        margin-top: 20px;
-                        width: 540px;
-                        font-size: 1.5em;
-                        font-weight: 300;
+                        margin-top: 10px;
+                        width: 383px;
+                        font-size: 1.1em;
                     }
                 }
             }
