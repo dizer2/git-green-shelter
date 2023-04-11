@@ -78,3 +78,9 @@ $(".video-mask2").mouseleave(function () {
 	$(".play__video2").hide();
 });
 
+$("#burgerBtnOpen").click( function(){
+	$(".burgerMenu").addClass("burgerMenuActive")
+});
+$("#burgerBtnClose").click( function(){
+	$(".burgerMenu").removeClass("burgerMenuActive")
+});
