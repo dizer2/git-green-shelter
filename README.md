@@ -5,7 +5,7 @@
 # text in gray
 @@ text in purple (and bold)@@
 ```
-@@ ### Main features: @@
+```@@ ### Main features: @@```
  - Html
  - Scss
  - Methodology Bem
