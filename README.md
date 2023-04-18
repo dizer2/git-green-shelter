@@ -1,20 +1,11 @@
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
-```@@ ### Main features: @@```
+```### Main features```
  - Html
  - Scss
  - Methodology Bem
- - oop js
  - jQuery
- - mockup
- 
-
+ - git
+ - team-work
 
 ---
 
-https://coffe-machine.netlify.app/
+https://green-shelter.netlify.app/
